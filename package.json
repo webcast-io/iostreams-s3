@@ -1,6 +1,6 @@
 {
   "name": "iostreams-s3",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "File stream provider for iostreams",
   "main": "index.js",
   "directories": {
