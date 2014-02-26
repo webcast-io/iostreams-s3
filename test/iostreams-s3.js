@@ -3,8 +3,8 @@
 
 var assert     = require('assert');
 var http       = require('http');
-var ioStream   = require('../../lib/iostreams')();
-var ioStreamS3 = require('../../providers/iostreams-s3');
+var ioStream   = require('iostreams')();
+var ioStreamS3 = require('../');
 var _          = require('underscore');
 var fs         = require('fs');
 
@@ -51,7 +51,7 @@ describe('iostreams-file', function() {
 
   describe('getOutputStream', function() {
 
-    var fileSize, filePath = __dirname + '/../assets/testfile1.flv';
+    var fileSize, filePath = __dirname + '/assets/testfile1.flv';
 
     before(function(done) {
       fs.stat(filePath, function(err, stats) {
